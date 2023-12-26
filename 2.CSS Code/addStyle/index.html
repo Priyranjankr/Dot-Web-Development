@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Internal CSS Style -->
+    <style>
+        h1 {
+            text-shadow: 1px 1px 2px rgb(18, 173, 204);
+        }
+        /* tag selector */
+        p{
+            color:blue !important; 
+            /* !important -->> Highest spacificity jaha likh denge o select ho jayega (bad Practice) */
+        }
+        /* using class selector */
+        .para-sf{
+            color: cyan;
+        }
+        /*  using id */
+        #black-para{
+            color: forestgreen;
+        }
+    </style>
+
+    <!-- how to link external css files with html files -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Inline CSS style -->
+    <!-- <p style="font-style: italic;" >Hello Kaise Ho Sab</p> -->
+
+    <h1>Internal CSS Style</h1>
+
+
+    <h3>This is External CSS Style</h3>
+    <h3>This is another Example of external CSS Style</h3>
+    <!-- <p>Let's apply internal CSS on this</p> -->
+        <!-- Specificity  -->
+    <p class="para-sf" id="black-para" style="color: springgreen;" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, alias!</p>
+</body>
+
+</html>
